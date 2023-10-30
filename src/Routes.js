@@ -1,15 +1,15 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import About from './Components/About';
+// import React from 'react';
+// import { Switch, Route } from 'react-router-dom';
+// import About from './Components/About';
 
-const Routes = () => {
-  return (
-    <Switch>
+// const Routes = () => {
+//   return (
+//     <Switch>
       
-      <Route path="/about" element={<About/>} />
+//       <Route path="/about" element={<About/>} />
       
-    </Switch>
-  );
-};
+//     </Switch>
+//   );
+// };
 
-export default Routes;
+// export default Routes;

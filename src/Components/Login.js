@@ -4,7 +4,7 @@ import './Login.css';
 import Button from 'react-bootstrap/Button';
 import swal from 'sweetalert';
 
-function Login(props) {   
+function Login() {   
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [isLoginSuccessful, setIsLoginSuccessful] = useState(false);
@@ -14,8 +14,8 @@ function Login(props) {
       
     if (email === "admin@gmail.com" && password === "admin@123") {
         setIsLoginSuccessful(true);
-        navigate("/home") 
-        swal("You have successfully logged in");  
+        navigate("/home")
+        swal("You have logged in successfully");   
     }else{
       swal("Invalid email or password");
     }
@@ -55,7 +55,7 @@ const navigate = useNavigate();
 
       </form>
       <p>Don't have an account?</p>
-      <a className='link-btn' onClick={() => props.onFormSwitch("")}>
+      <a className='link-btn'>
          Register Here
       </a>
     </div>
