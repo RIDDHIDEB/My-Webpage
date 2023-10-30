@@ -1,0 +1,8 @@
+.come-from-modal.right.fade .modal-dialog {
+    right: -720px;
+    top: 80px;
+}
+
+.come-from-modal.right.fade.in .modal-dialog {
+    right: 0;
+}

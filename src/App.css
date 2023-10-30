@@ -1,0 +1,67 @@
+body{
+  background: url('./Components/bgImage.png');
+}
+
+.scroll{
+  background-color: white;
+  width:90%;
+  height:100%;
+  margin:auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: left;
+  padding: 50px;
+  font-size: 20px;
+  box-shadow: 0 0 10px -1px rgba(0,0,0,0.34);
+  overflow-x: auto;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.float-container {
+  border: 3px solid #fff;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  box-shadow: 0 0 10px -1px rgba(0,0,0,0.34);
+}  
+
+.image-container{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #66ccf1;
+}
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.img{
+  padding: 20px;
+}
+
+.location-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 15rem;
+}
+
+h3{
+  display: grid;
+  align-items: center;
+}
+
+.location-text{
+  line-height: 3rem;
+}
+
+.button1{
+  padding-top: 60px;
+}

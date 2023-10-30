@@ -1,0 +1,12 @@
+.carousel-container {
+    margin-top: 100px;
+  }
+.carousel-item {
+    flex: 1;
+  }
+  
+.carousel-item img {
+    height:50vh;
+    width:100vw;
+    object-fit: cover;
+  }
