@@ -5,6 +5,9 @@ import './App.css';
 import Login from './Components/Login';
 import About from './Pages/About';
 import Service from './Pages/Service';
+import ProductDev from './Components/ProductDev';
+import Offshore from './Components/Offshore';
+import StaffAug from './Components/StaffAug';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -15,7 +18,9 @@ function App() {
         <Route path='/home' element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path='/services' element={<Service/>}/>
-        
+        <Route path='/productdev' element={<ProductDev/>}/>
+        <Route path='/offshore' element={<Offshore/>}/>
+        <Route path='/staffAug' element={<StaffAug/>}/>
       </Routes>
       
     </Router>

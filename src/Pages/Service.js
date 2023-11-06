@@ -30,7 +30,7 @@ function Service() {
           <div className='service-container'>
             <img height='50%' width='100%' src='https://staging.entiovi.com/wp-content/uploads/2023/09/2.png'/>
             <h4><b>Product Development</b></h4>
-            <p>As a software company, one of our primary areas of expertise is in developing software products for our clients...</p>
+            <Link to='/productdev' style={{textDecoration:'none'}}>As a software company, one of our primary areas of expertise is in developing software products for our clients...</Link>
           </div>
 
           </div>
@@ -39,7 +39,7 @@ function Service() {
           <div className='service-container'>
            <img height='50%' width='100%' src='https://staging.entiovi.com/wp-content/uploads/2023/09/Logistics.png'/>
            <h4><b>Offshore Delivery Services</b></h4>
-           <p>We provide managed offshore delivery centres (ODC) from our India offices to provide Software development...</p>
+           <Link to='/offshore' style={{textDecoration:'none'}}>We provide managed offshore delivery centres (ODC) from our India offices to provide Software development...</Link>
           </div>
 
           </div>
@@ -47,7 +47,7 @@ function Service() {
           <div className='service-container'>
             <img height='50%' width='100%' src='https://staging.entiovi.com/wp-content/uploads/2023/09/1-1.png'/>
             <h4><b>Staff Augmentation Services</b></h4>
-            <p>Entiovi is a technology solution & services provider with special focus on staff augmentation for product companies...</p>
+            <Link to='/staffAug' style={{textDecoration:'none'}}>It is a technology solution & services provider with special focus on staff augmentation for product companies...</Link>
           </div>
 
           </div>
