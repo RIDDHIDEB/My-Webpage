@@ -28,16 +28,22 @@ function Service() {
         <div className='float-container1'>
           <div className='float-child1'>
           <div className='service-container'>
-            <img height='50%' width='100%' src='https://staging.entiovi.com/wp-content/uploads/2023/09/2.png'/>
+          <Link to='/productdev'>
+            <img height='50%' width='100%' src='https://staging.entiovi.com/wp-content/uploads/2023/09/2.png' />
+            </Link>
             <h4><b>Product Development</b></h4>
-            <Link to='/productdev' style={{textDecoration:'none'}}>As a software company, one of our primary areas of expertise is in developing software products for our clients...</Link>
+            <Link to='/productdev' style={{textDecoration:'none'}}> <p>As a software company, one of our primary areas of expertise is in developing software products for our clients...</p> </Link>
+           
           </div>
+          
 
           </div>
           
           <div className='float-child1'>
           <div className='service-container'>
+          <Link to='/offshore'>
            <img height='50%' width='100%' src='https://staging.entiovi.com/wp-content/uploads/2023/09/Logistics.png'/>
+           </Link>
            <h4><b>Offshore Delivery Services</b></h4>
            <Link to='/offshore' style={{textDecoration:'none'}}>We provide managed offshore delivery centres (ODC) from our India offices to provide Software development...</Link>
           </div>
@@ -45,7 +51,9 @@ function Service() {
           </div>
           <div className='float-child1'>
           <div className='service-container'>
+            <Link to='/staffAug'>
             <img height='50%' width='100%' src='https://staging.entiovi.com/wp-content/uploads/2023/09/1-1.png'/>
+            </Link>
             <h4><b>Staff Augmentation Services</b></h4>
             <Link to='/staffAug' style={{textDecoration:'none'}}>It is a technology solution & services provider with special focus on staff augmentation for product companies...</Link>
           </div>
