@@ -1,5 +1,6 @@
 import React ,{useState,useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import './Login.css';
 import Button from 'react-bootstrap/Button';
 import swal from 'sweetalert';
@@ -55,9 +56,9 @@ const navigate = useNavigate();
 
       </form>
       <p>Don't have an account?</p>
-      <a className='link-btn'>
+      <Link to='/signin'>
          Register Here
-      </a>
+      </Link>
     </div>
     </div>
 

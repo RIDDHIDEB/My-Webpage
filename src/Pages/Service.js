@@ -61,15 +61,12 @@ function Service() {
           </div>
         </div>        
 
-
-
         <footer>
             <p className='footer-text'>My Webpage. © 2023. All Rights Reserved</p>
         </footer>
-        
-    
+
     </>
   )
 }
 
-export default Service
+export default Service;

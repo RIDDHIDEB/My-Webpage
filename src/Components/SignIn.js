@@ -2,64 +2,70 @@ import React,{useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./Contact.css";
+import "./SignIn.css";
+import { useNavigate } from 'react-router-dom';
+import swal from 'sweetalert';
 
-function Contact() {
-    const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+function SignIn() {
+    
+    // const handleClose = () => setShow(false);
+    // const handleShow = () => setShow(true);
+    const [email,setEmail] = useState("");
+    const [password,setPassword] = useState("");
+    const [mobile,setMobile] = useState("");
+    const [confirmPass,setConfirmPass] = useState("");
+    const [register,setRegister] = useState(false);
+    const navigate=useNavigate();
 
-    const handleInputChange = (event) =>{
-      const {name, value} = event.target;
-      setShow((prevData) =>({
-        ...prevData,
-        [name]: value
-      }));
-    }
-    const handleSubmit = (event) =>{
-      event.preventDefault();
-      console.log('Form Data:', show);
+    // const handleInputChange = (e) =>{
+    //   const {name, value} = e.target;
+    //   setShow((prevData) =>({
+    //     ...prevData,
+    //     [name]: value
+    //   }));
+    // }
+    const handleSubmit = (e) =>{
+      e.preventDefault();
+
+      if(setRegister===true){
+        navigate('/home');
+        swal('You have successfully Registered');
+      }else{
+        swal('Registration Failed');
+      }
+      
     };
 
     return(
-        <React.Fragment>
-          <Button variant='none' style={{color:'#ffff'}} onClick={handleShow}>Sign-In</Button>
-
-          <Modal show={show} onHide={handleClose} centered>
-            <div className='modal-style'>
-            <Modal.Header closeButton>
-            <Modal.Title className='modal-title'><h1 className='heading'>Sign-In</h1></Modal.Title>
-            </Modal.Header>
-            <Modal.Body >
+         <React.Fragment>
+       <div className='form-container'>
             <form className='form' onSubmit={handleSubmit}>
               <div className="row">
                 <div className="col">
                   <div className="form-group" >
-                    <label htmlFor="name">Username</label>
-                      <input type="text" class="form-control" placeholder='Choose your username' name='name' value={show.name} onChange={handleInputChange}/>
+                    <label htmlFor="name">Email:</label>
+                      <input type="text" class="form-control" placeholder='Enter your email' name='name' value={email} onChange={(e) => setEmail(e.target.value)}/>
                   </div>
                 
                   <div className="form-group">
-                    <label for="name">Email</label>
-                      <input type="text" className="form-control" placeholder='Enter your email' name='email' value={show.value} onChange={handleInputChange}/>
+                    <label for="name">Mobile Number:</label>
+                      <input type="text" className="form-control" placeholder='Enter your mobile number' name='mobile' value={mobile} onChange={(e) => setMobile(e.target.value)}/>
                   </div>
                 </div>
               </div>
               <div className="form-group">
-                <label for="name">Password</label>
-                  <input type="text" class="form-control" rows='5' placeholder='Enter your password' name='password'></input>
+                <label for="name">Password:</label>
+                  <input type="text" class="form-control" rows='5' placeholder='*********' name='password' value={password} onChange={(e) => setPassword(e.target.value)}></input>
               </div>
+              <div className="form-group">
+                <label for="name">Confirm Password:</label>
+                  <input type="text" class="form-control" rows='5' placeholder='*********' name='password' value={confirmPass} onChange={(e) => setConfirmPass(e.target.value)}></input>
+              </div>
+              <Button onClick={handleSubmit}>Register</Button>
                 </form> 
-                </Modal.Body>
-                <Modal.Footer>
-                  
-                  <Button variant="primary" onClick={handleSubmit}>Sign-In</Button>
-                </Modal.Footer>
-            </div>
-          </Modal>
-  
+        </div>
         </React.Fragment>
     );
 }
 
-export default Contact;
+export default SignIn;
