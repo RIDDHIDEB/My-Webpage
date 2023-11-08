@@ -8,7 +8,7 @@ import Service from './Pages/Service';
 import ProductDev from './Components/ProductDev';
 import Offshore from './Components/Offshore';
 import StaffAug from './Components/StaffAug';
-import SignIn from './Components/SignIn';
+import SignUp from './Components/SignUp';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         <Route path='/productdev' element={<ProductDev/>}/>
         <Route path='/offshore' element={<Offshore/>}/>
         <Route path='/staffAug' element={<StaffAug/>}/>
-        <Route path='/signin' element={<SignIn/>}/>
+        <Route path='/signup' element={<SignUp/>}/>
       </Routes>
       
     </Router>

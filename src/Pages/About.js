@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import CalcModal from '../Components/CalcModal';
-import SignIn from '../Components/SignIn';
+import SignIn from '../Components/SignUp';
  
 function About() {
     return (

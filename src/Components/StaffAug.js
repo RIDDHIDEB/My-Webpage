@@ -25,4 +25,4 @@ function StaffAug() {
   )
 }
 
-export default StaffAug
+export default StaffAug;

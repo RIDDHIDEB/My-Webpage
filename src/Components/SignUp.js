@@ -1,11 +1,11 @@
 import React,{useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./SignIn.css";
+import "./SignUp.css";
 import { useNavigate } from 'react-router-dom';
 import swal from 'sweetalert';
 
-function SignIn() {
+function SignUp() {
     
     // const handleClose = () => setShow(false);
     // const handleShow = () => setShow(true);
@@ -68,4 +68,4 @@ function SignIn() {
     );
 }
 
-export default SignIn;
+export default SignUp;

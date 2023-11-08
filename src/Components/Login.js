@@ -56,7 +56,7 @@ const navigate = useNavigate();
 
       </form>
       <p>Don't have an account?</p>
-      <Link to='/signin'>
+      <Link to='/signup'>
          Register Here
       </Link>
     </div>

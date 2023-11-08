@@ -28,4 +28,4 @@ function Offshore() {
   )
 }
 
-export default Offshore
+export default Offshore;
