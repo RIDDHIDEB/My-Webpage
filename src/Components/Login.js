@@ -1,4 +1,4 @@
-import React ,{useState,useEffect} from 'react';
+import React ,{useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import './Login.css';
@@ -13,7 +13,7 @@ function Login() {
   const handleSubmit = (e) => {
         e.preventDefault();
       
-    if (email === "admin@gmail.com" && password === "admin@123") {
+    if (email === "admin@gmail.com" && password === "admin@123"){
         setIsLoginSuccessful(true);
         navigate("/home")
         swal("You have logged in successfully");   

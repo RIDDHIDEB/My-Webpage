@@ -1,6 +1,5 @@
 import React,{useState} from 'react';
 import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./SignIn.css";
 import { useNavigate } from 'react-router-dom';
@@ -27,7 +26,8 @@ function SignIn() {
     const handleSubmit = (e) =>{
       e.preventDefault();
 
-      if(setRegister===true){
+      if(email==='admin@gmail.com' && password==='admin@123' && mobile==='8017937963' && confirmPass==='admin@123'){
+        setRegister(true);
         navigate('/home');
         swal('You have successfully Registered');
       }else{
@@ -37,7 +37,7 @@ function SignIn() {
     };
 
     return(
-         <React.Fragment>
+      <React.Fragment>
        <div className='form-container'>
             <form className='form' onSubmit={handleSubmit}>
               <div className="row">
@@ -64,7 +64,7 @@ function SignIn() {
               <Button onClick={handleSubmit}>Register</Button>
                 </form> 
         </div>
-        </React.Fragment>
+      </React.Fragment>
     );
 }
 
