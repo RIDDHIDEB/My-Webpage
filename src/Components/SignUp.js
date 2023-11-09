@@ -95,25 +95,25 @@ function SignUp() {
               <div className="col">
                 <div className="form-group" >
                   <label htmlFor="name">Email:</label>
-                  <input type="text" class="form-control" placeholder='Enter your email' name='name' value={email} onChange={(e) => setEmail(e.target.value)}/>
+                  <input type="text" className="form-control" placeholder='Enter your email' name='name' value={email} onChange={(e) => setEmail(e.target.value)}/>
                 </div>
                 
                 <div className="form-group">
-                  <label for="name">Mobile Number:</label>
+                  <label htmlFor="name">Mobile Number:</label>
                   <input type="text" className="form-control" placeholder='Enter your mobile number' name='mobile' value={mobile} onChange={(e) => setMobile(e.target.value)}/>
                 </div>
               </div>
             </div>
               <div className="form-group">
-                <label for="name">Password:</label>
-                <input type="text" class="form-control"  placeholder='*********' name='password' value={password} onChange={(e) => setPassword(e.target.value)}></input>
+                <label htmlFor="name">Password:</label>
+                <input type="text" className="form-control"  placeholder='*********' name='password' value={password} onChange={(e) => setPassword(e.target.value)}></input>
               </div>
               <div className="form-group">
-                <label for="name">Confirm Password:</label>
-                  <input type="text" class="form-control"  placeholder='*********' name='password' value={confirmPass} onChange={(e) => setConfirmPass(e.target.value)}></input>
+                <label htmlFor="name">Confirm Password:</label>
+                  <input type="text" className="form-control"  placeholder='*********' name='password' value={confirmPass} onChange={(e) => setConfirmPass(e.target.value)}></input>
               </div>
               <div className="form-group">
-                <label for="name">Enter OTP:</label>
+                <label htmlFor="name">Enter OTP:</label>
                 <input  name="otp" placeholder="OTP Number" required />
                 <Button>Submit</Button>
               </div>
