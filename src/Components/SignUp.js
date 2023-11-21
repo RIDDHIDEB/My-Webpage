@@ -90,7 +90,7 @@ function SignUp() {
     return(
       <React.Fragment>
        <div className='form-container'>
-          <form className='form' onSubmit={handleSubmit}>
+          <form className='form1' onSubmit={handleSubmit}>
             <div className="row">
               <div className="col">
                 <div className="form-group" >
@@ -115,7 +115,7 @@ function SignUp() {
               <div className="form-group">
                 <label htmlFor="name">Enter OTP:</label>
                 <input  name="otp" placeholder="OTP Number" required />
-                <Button>Submit</Button>
+                <Button onClick={onSubmitOTP}>Submit</Button>
               </div>
               <Button onClick={handleSubmit}>Register</Button>
             </form> 

@@ -2,4 +2,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
+
+.productdev-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productdev-float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.productdev-float-child {
+    width: 40%;
+    float: left;
+    padding: 20px;
+    box-shadow: 0 0 10px -1px rgba(0,0,0,0.34);
+  }  
+
+  .productdev-float-child1 {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    float: right;
+    padding: 20px;
+    /* box-shadow: 0 0 10px -1px rgba(0,0,0,0.34); */
+  }  
