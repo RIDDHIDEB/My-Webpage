@@ -29,7 +29,7 @@ function Menu() {
 
             <div className='scroll'>
       
-      <div><Banner/></div>
+      
 
       <div className="float-container">
 
@@ -91,6 +91,7 @@ function Menu() {
         <img className='img' src={image2}/>
         <img className='img' src={image3}/>
       </div>
+      <div><Banner/></div>
     </div>
 
             <footer>

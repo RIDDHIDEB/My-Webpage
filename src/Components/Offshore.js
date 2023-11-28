@@ -20,7 +20,14 @@ function Offshore() {
         <div className='offshore-heading'>
             <h1>Offshore Delivery Services</h1>
         </div>
-
+        
+        <div className='scroll'>
+          <div>
+            <div>
+              
+            </div>
+          </div>
+        </div>
         <footer>
             <p className='footer-text'>My Webpage. © 2023. All Rights Reserved</p>
         </footer>

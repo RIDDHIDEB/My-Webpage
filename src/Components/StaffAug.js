@@ -18,6 +18,15 @@ function StaffAug() {
         <div className='staffAug-heading'>
             <h1>Staff Augmentation Services</h1>
         </div>
+
+        <div className='scroll'>
+          <div>
+            <div>
+              
+            </div>
+          </div>
+        </div>
+        
         <footer>
             <p className='footer-text'>My Webpage. © 2023. All Rights Reserved</p>
         </footer>

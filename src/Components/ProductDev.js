@@ -6,7 +6,7 @@ import './ProductDev.css';
 
 function ProductDev() {
 
-  const pData = [0, 0, 0, 0, 0];
+  const pData = [25, 9, 5, 15, 11];
   const uData = [70, 40, 33, 57, 65];
   const xLabels = [
     'Product A',

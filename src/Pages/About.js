@@ -18,10 +18,10 @@ function About() {
                     </ul>
                 </div>
             </nav>
-
+            <center style={{display:'flex', justifyContent:'center', margin:'20px'}}><h1 style={{color:'#000'}}>TERMS OF USE</h1></center>
             <div className='scroll'>
-            <center style={{display:'flex', justifyContent:'center'}}><h1 style={{color:'#000'}}>TERMS OF USE</h1></center> <br/>
-            <p><br/>
+             
+            <p>
             <b>1. Introduction</b><br/>
            Welcome to ClearedTalent (“Company”, “we”, “our”, “us”)!<br/>
            These Terms of Service (“Terms”, “Terms of Service”) govern your use of our website located at <a href="link">www.mywebpage.com</a> (“Service”, “Services”) operated by <strong>MyWebpage</strong>.<br/>
